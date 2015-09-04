@@ -1,0 +1,380 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
+  display: block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none; }
+
+ul {
+  list-style: none; }
+
+button, textarea, input {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+h1, h2, h3, h4 {
+  font-family: "Merriweather", "Georgia", Times, serif;
+  font-weight: 400; }
+
+h1 {
+  margin: 42.5px 0;
+  font-size: 1.625rem;
+  font-weight: 300; }
+
+h2, h3, h4 {
+  margin-bottom: 21.25px;
+  color: #f8857a;
+  font-size: 1.5rem; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Merriweather", "Georgia", Times, serif;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 160%;
+  vertical-align: baseline;
+  color: #130b1e;
+  background: #fddedb;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+a {
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all 0.15s ease-out; }
+
+.center {
+  text-align: center; }
+
+.container {
+  width: 70%;
+  margin: 85px 0 85px 15%; }
+  .container p, .container ul {
+    font-size: 0.9375rem;
+    font-weight: 300; }
+
+.link {
+  color: #130b1e; }
+
+header[role="banner"] {
+  position: relative;
+  overflow: hidden;
+  color: #fddedb;
+  background: #130b1e; }
+  header[role="banner"] .container {
+    position: relative;
+    z-index: 10;
+    margin-top: 85px; }
+    header[role="banner"] .container:after {
+      display: none;
+      content: "";
+      clear: both; }
+  header[role="banner"] .monogram,
+  header[role="banner"] hr,
+  header[role="banner"] strong {
+    display: block;
+    float: left;
+    margin-bottom: 42.5px;
+    font-weight: 400; }
+  header[role="banner"] .monogram {
+    width: 80px;
+    height: 80px;
+    background: #fddedb; }
+    header[role="banner"] .monogram svg {
+      margin: 15px; }
+      header[role="banner"] .monogram svg g {
+        fill: #130b1e !important; }
+  header[role="banner"] hr {
+    margin: 76px 42.5px 0 42.5px;
+    width: 42.5px;
+    height: 2px;
+    background: #fddedb; }
+  header[role="banner"] strong {
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem; }
+
+.content h1,
+.content p {
+  margin-left: 207.5px; }
+.content p {
+  margin-top: 10.625px; }
+  .content p.btn-container {
+    margin-top: 42.5px; }
+    .content p.btn-container .btn-solid {
+      margin-right: 10.625px; }
+  .content p a {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(19, 11, 30, 0.5); }
+    .content p a:hover {
+      border-color: transparent; }
+.content .content-date {
+  margin-top: 10.625px;
+  text-transform: uppercase;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem; }
+
+footer[role="contentinfo"] {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right; }
+  footer[role="contentinfo"] p {
+    display: inline-block;
+    padding: 21.25px;
+    border-top: 2px solid #130b1e; }
+    footer[role="contentinfo"] p a {
+      text-transform: uppercase;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      font-size: 0.75rem; }
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px 13px 22px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  transition: all 0.25s ease-out;
+  box-sizing: border-box; }
+  .btn.btn-solid {
+    color: #fddedb;
+    background: transparent;
+    border: 1px solid #fddedb; }
+    .btn.btn-solid:hover {
+      border-radius: 40px; }
+
+.monogram,
+header[role="banner"] hr,
+header[role="banner"] strong,
+section[role="main"],
+footer[role="contentinfo"] {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-animation: fadein 0.6s 0.5s 1 forwards ease-in-out;
+  -moz-animation: fadein 0.6s 0.5s 1 forwards ease-in-out;
+  animation: fadein 0.6s 0.5s 1 forwards ease-in-out; }
+
+header[role="banner"] hr {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
+
+header[role="banner"] strong {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s; }
+
+header[role="banner"] p {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+  header[role="banner"] p.home-cta {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    animation-delay: 1.4s; }
+
+section[role="main"] {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s; }
+
+footer[role="contentinfo"] {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s; }
+
+@-webkit-keyframes fadein {
+  0% {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  0% {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-webkit-keyframes bgcolorfade {
+  0% {
+    background-color: #320a28; }
+
+  25% {
+    background-color: #511730; }
+
+  50% {
+    background-color: #8c5e58; }
+
+  75% {
+    background-color: #983628; }
+
+  100% {
+    background-color: #69111c; } }
+
+@-moz-keyframes bgcolorfade {
+  0% {
+    background-color: #320a28; }
+
+  25% {
+    background-color: #511730; }
+
+  50% {
+    background-color: #8c5e58; }
+
+  75% {
+    background-color: #983628; }
+
+  100% {
+    background-color: #69111c; } }
+
+@keyframes bgcolorfade {
+  0% {
+    background-color: #320a28; }
+
+  25% {
+    background-color: #511730; }
+
+  50% {
+    background-color: #8c5e58; }
+
+  75% {
+    background-color: #983628; }
+
+  100% {
+    background-color: #69111c; } }
+
+@-webkit-keyframes colorfade {
+  0% {
+    color: #320a28; }
+
+  25% {
+    color: #511730; }
+
+  50% {
+    color: #8c5e58; }
+
+  75% {
+    color: #983628; }
+
+  100% {
+    color: #69111c; } }
+
+@-moz-keyframes colorfade {
+  0% {
+    color: #320a28; }
+
+  25% {
+    color: #511730; }
+
+  50% {
+    color: #8c5e58; }
+
+  75% {
+    color: #983628; }
+
+  100% {
+    color: #69111c; } }
+
+@keyframes colorfade {
+  0% {
+    color: #320a28; }
+
+  25% {
+    color: #511730; }
+
+  50% {
+    color: #8c5e58; }
+
+  75% {
+    color: #983628; }
+
+  100% {
+    color: #69111c; } }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 70%; } }
+@media screen and (max-width: 800px) {
+  .content h1,
+  .content p {
+    margin-left: 0; } }
+@media screen and (max-width: 600px) {
+  .btn {
+    display: block;
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%; }
+
+  .container {
+    width: auto;
+    margin: 42.5px auto;
+    padding: 0 25px; }
+
+  header[role="banner"] .container {
+    margin: 0;
+    padding: 50px 25px 5px 25px; }
+  header[role="banner"] .monogram,
+  header[role="banner"] hr,
+  header[role="banner"] strong {
+    float: none;
+    margin: 0 0 20px 0; }
+
+  footer[role="contentinfo"] {
+    position: relative; } }

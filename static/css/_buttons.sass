@@ -1,0 +1,19 @@
+// =Base
+// ----------------------------------------------
+
+.btn
+  display: inline-block
+  padding: 12px 22px 13px 22px
+  text-decoration: none
+  text-align: center
+  +uppercase
+  +transition(all, .25s)
+  box-sizing: border-box
+
+  &.btn-solid
+    color: $color1
+    background: transparent
+    border: 1px solid $color1
+
+    &:hover
+      border-radius: 40px

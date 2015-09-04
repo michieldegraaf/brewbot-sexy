@@ -1,0 +1,35 @@
+// =Typography
+// ----------------------------------------------
+
+=font-size($value)
+  font-size: ($value / 16) + rem
+
+=sans-serif
+  font:
+    family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    weight: 400
+
+=serif
+  font:
+    family: 'Merriweather' ,'Georgia', Times, serif
+    weight: 400
+
+h1,h2,h3,h4
+  +serif
+
+h1
+  margin: $spacer-mid 0
+  +font-size(26)
+  font-weight: 300
+
+h2,h3,h4
+  margin-bottom: $spacer-low
+  color: $text
+  +font-size(24)
+
+=uppercase
+  text-transform: uppercase
+  +sans-serif
+  font-weight: bold
+  letter-spacing: .2em
+  +font-size(12)

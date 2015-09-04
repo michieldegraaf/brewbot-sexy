@@ -1,0 +1,100 @@
+// =Layout
+// ----------------------------------------------
+
+.container
+  width: 70%
+  margin: $spacer-high 0 $spacer-high 15%
+
+  p, ul
+    +font-size(15)
+    font-weight: 300
+
+.link
+  color: $color2
+
+header[role="banner"]
+  position: relative
+  overflow: hidden
+  color: $color1
+  background: $color2
+
+  .container
+    position: relative
+    z-index: 10
+    margin:
+      top: $spacer-high
+
+    &:after
+      display: none
+      content: ""
+      clear: both
+
+  .monogram,
+  hr,
+  strong
+    display: block
+    float: left
+    margin:
+      bottom: $spacer-mid
+    font-weight: 400
+
+  .monogram
+    width: 80px
+    height: 80px
+    background: $color1
+
+    svg
+      margin: 15px
+
+      g
+        fill: $color2 !important
+
+  hr
+    margin: 76px $spacer-mid 0 $spacer-mid
+    width: $spacer-mid
+    height: 2px
+    background: $color1
+
+  strong
+    margin-top: 60px
+    +uppercase
+
+.content
+  h1,
+  p
+    margin-left: ($spacer-mid*3)+80px
+
+  p
+    margin-top: $spacer-low / 2
+
+    &.btn-container
+      margin-top: $spacer-mid
+
+      .btn-solid
+        margin-right: $spacer-low / 2
+
+    a
+      font-weight: bold
+      border-bottom: 1px solid rgba($color2, .5)
+
+      &:hover
+        border-color: transparent
+
+  .content-date
+    margin-top: $spacer-low / 2
+    +uppercase
+
+footer[role="contentinfo"]
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  text-align: right
+
+  p
+    display: inline-block
+    padding: $spacer-low
+    border-top: 2px solid $color2
+
+    a
+      +uppercase

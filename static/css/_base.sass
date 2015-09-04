@@ -1,0 +1,28 @@
+// =Base
+// ----------------------------------------------
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  +serif
+  font:
+    size: 100%
+  line-height: 160%
+  vertical-align: baseline
+  color: $color2
+  background: $color1
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+a
+  cursor: pointer
+  white-space: nowrap
+  text-decoration: none
+  +transition(all, .15s)
+
+.center
+  text-align: center

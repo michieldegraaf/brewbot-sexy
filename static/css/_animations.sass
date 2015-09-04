@@ -1,0 +1,87 @@
+// =Animations
+// ----------------------------------------------
+
+// =Animations
+// --------------------------
+
+.monogram,
+header[role="banner"] hr,
+header[role="banner"] strong,
+section[role="main"],
+footer[role="contentinfo"]
+  opacity: 0
+  -webkit-transform: translateY(-20px)
+  -moz-transform: translateY(-20px)
+  transform: translateY(-20px)
+  +animation(fadein .6s .5s 1 forwards ease-in-out)
+
+header[role="banner"] hr
+  -webkit-animation-delay: .8s
+  -moz-animation-delay: .8s
+  animation-delay: .8s
+
+header[role="banner"] strong
+  -webkit-animation-delay: 1s
+  -moz-animation-delay: 1s
+  animation-delay: 1s
+
+header[role="banner"] p
+  -webkit-animation-delay: 1.2s
+  -moz-animation-delay: 1.2s
+  animation-delay: 1.2s
+
+  &.home-cta
+    -webkit-animation-delay: 1.4s
+    -moz-animation-delay: 1.4s
+    animation-delay: 1.4s
+
+section[role="main"]
+  -webkit-animation-delay: 1.6s
+  -moz-animation-delay: 1.6s
+  animation-delay: 1.6s
+
+footer[role="contentinfo"]
+  -webkit-animation-delay: 1.8s
+  -moz-animation-delay: 1.8s
+  animation-delay: 1.8s
+
+// Keyframes - FadeIn
+// --------------------------
+
++keyframes(fadein)
+  0%
+    +transform(translateY(-20px))
+    opacity: 0
+  100%
+    +transform(translateY(0))
+    opacity: 1
+
+// Keyframes - BG color fade
+// --------------------------
+
++keyframes(bgcolorfade)
+  0%
+    background-color: #320a28
+  25%
+    background-color: #511730
+  50%
+    background-color: #8C5e58
+  75%
+    background-color: #983628
+  100%
+    background-color: #69111c
+
+// Keyframes - Color fade
+// --------------------------
+
++keyframes(colorfade)
+  0%
+    color: #320a28
+  25%
+    color: #511730
+  50%
+    color: #8C5e58
+  75%
+    color: #983628
+  100%
+    color: #69111c
