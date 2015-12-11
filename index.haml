@@ -22,7 +22,10 @@
     %link{:href => "http://fonts.googleapis.com/css?family=Lato|Merriweather:400,300", :rel => "stylesheet"}/
     %title Brewbot Ulster Fryday
   %body
-  
+
+    %audio.click
+      %source{:src => "/img/thisisnotanimagelol.wav"}
+
     %header{:role => "banner"}
       .container
         %figure.monogram
@@ -56,6 +59,9 @@
     %footer{:role => "contentinfo"}
       %p
         %a.link{:href => "https://twitter.com/graafdemichiel", :target => "_blank"} Peace!
+
+    %script{:src => "/js/jquery.min.js"}
+    %script{:src => "/js/main.js"}
 
     :javascript
       var _gaq = _gaq || [];

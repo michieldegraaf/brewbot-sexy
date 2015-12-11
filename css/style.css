@@ -218,135 +218,99 @@ footer[role="contentinfo"] {
     -moz-transform: translateY(-20px);
     transform: translateY(-20px);
     opacity: 0; }
-
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-
 @-moz-keyframes fadein {
   0% {
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
     transform: translateY(-20px);
     opacity: 0; }
-
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-
 @keyframes fadein {
   0% {
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
     transform: translateY(-20px);
     opacity: 0; }
-
   100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-
 @-webkit-keyframes bgcolorfade {
   0% {
     background-color: #320a28; }
-
   25% {
     background-color: #511730; }
-
   50% {
-    background-color: #8c5e58; }
-
+    background-color: #8C5e58; }
   75% {
     background-color: #983628; }
-
   100% {
     background-color: #69111c; } }
-
 @-moz-keyframes bgcolorfade {
   0% {
     background-color: #320a28; }
-
   25% {
     background-color: #511730; }
-
   50% {
-    background-color: #8c5e58; }
-
+    background-color: #8C5e58; }
   75% {
     background-color: #983628; }
-
   100% {
     background-color: #69111c; } }
-
 @keyframes bgcolorfade {
   0% {
     background-color: #320a28; }
-
   25% {
     background-color: #511730; }
-
   50% {
-    background-color: #8c5e58; }
-
+    background-color: #8C5e58; }
   75% {
     background-color: #983628; }
-
   100% {
     background-color: #69111c; } }
-
 @-webkit-keyframes colorfade {
   0% {
     color: #320a28; }
-
   25% {
     color: #511730; }
-
   50% {
-    color: #8c5e58; }
-
+    color: #8C5e58; }
   75% {
     color: #983628; }
-
   100% {
     color: #69111c; } }
-
 @-moz-keyframes colorfade {
   0% {
     color: #320a28; }
-
   25% {
     color: #511730; }
-
   50% {
-    color: #8c5e58; }
-
+    color: #8C5e58; }
   75% {
     color: #983628; }
-
   100% {
     color: #69111c; } }
-
 @keyframes colorfade {
   0% {
     color: #320a28; }
-
   25% {
     color: #511730; }
-
   50% {
-    color: #8c5e58; }
-
+    color: #8C5e58; }
   75% {
     color: #983628; }
-
   100% {
     color: #69111c; } }
-
 @media screen and (max-width: 1000px) {
   .container {
     width: 70%; } }
@@ -378,3 +342,12 @@ footer[role="contentinfo"] {
 
   footer[role="contentinfo"] {
     position: relative; } }
+body.robeam {
+  background: pink url(/img/robeam.jpg) no-repeat center center;
+  background-size: cover; }
+  body.robeam header[role="banner"] {
+    color: #fff;
+    background-color: transparent; }
+  body.robeam .monogram,
+  body.robeam hr {
+    background: #fff; }
